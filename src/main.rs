@@ -2,11 +2,9 @@ use std::fs;
 use std::process;
 
 const DIR_PATH: &str = r#"C:\music\main playlist"#;
-const OUTPUT_PATH: &str = r#"C:\music\backup\list.txt"#;
-
+const OUTPUT_PATH: &str = r#"C:\music\backup\ALL TRACKS.txt"#;
 
 fn main() {
-
     // Read directory entries
     let entries = match fs::read_dir(DIR_PATH) {
         Ok(e) => e,
