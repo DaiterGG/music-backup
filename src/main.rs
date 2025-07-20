@@ -19,8 +19,9 @@ fn main() {
     for entry in entries {
         match entry {
             Ok(entry) => {
-                let file_name = entry.file_name();
-                file_names.push(file_name.to_string_lossy().into_owned());
+                let file_name = entry.file_name().to_string_lossy().into_owned();
+                let file_name = file_name.replace(".m4a", "");
+                file_names.push(file_name);
             }
             Err(err) => eprintln!("Error reading directory entry: {}", err),
         }
