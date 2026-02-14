@@ -1,4 +1,4 @@
-cd "D:\music\backup"
+cd "D:\music\backup" /d
 cargo run
 git commit -a -m "auto backup"
 git push
