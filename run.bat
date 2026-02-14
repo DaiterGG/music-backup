@@ -1,5 +1,6 @@
 cd "D:\music\backup" /d
 cargo run
-git commit -a -m "auto backup"
+git add .
+git commit -m "auto backup"
 git push
 set /p DUMMY=Hit ENTER to exit...
